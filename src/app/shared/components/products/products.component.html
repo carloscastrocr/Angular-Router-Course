@@ -5,7 +5,7 @@
     (addedProduct)="onAddToShoppingCart($event)"
     (showProduct)="onShowDetail($event)"
   ></app-product>
-  <button (click)="loadMore()">Load more</button>
+  <button (click)="onLoadMore()">Load more</button>
 </div>
 <div class="product-detail" [class.active]="showProductDetail">
   {{ statusDetail }}
@@ -20,6 +20,7 @@
       </ng-template>
     </swiper>
     <p>{{ productChosen.description }}</p>
+ 
     <button (click)="updateProduct()">editar</button>
     <button (click)="deleteProduct()">delete</button>
   </div>
